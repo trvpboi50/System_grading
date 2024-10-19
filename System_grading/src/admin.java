@@ -1,65 +1,66 @@
 import java.util.Scanner;
-
 public class admin {
-    private int AdminId;
-    private int Phone;
-    private String Dept;
-    private String emailId;
+    private  String  name;
     private String password;
-    private String name;
-    //constructors
-    public admin (){}
-    public admin(String name){
-        System.out.print("ENTER ADMIN's NAME:" + name);
-    }
-   public void setAdminId(int id){
-    AdminId = id;
-} 
-   public int getAdminId(){
-       return AdminId;
-   }
-   public void setPhone(int number){
-    Phone = number;
-}
-public String getName(){
-        return name;
-}
-public void setName(){
-        this.name=name;
-}
-   public void setpassword(String security){
-       password = security;
-   }
-   //getter methods
-   public String getpassword(){
-       return password;
-   }
-   public int getPhone(){
-       return Phone;
-   }
-   public void setDept(String name){
-    this.Dept = name;
-} 
-   public String getDept(){
-       return Dept;
-   }
-   public void setemailId(String id){
-    emailId = id;
-     
-} 
-   public String getemailId(){
-       return emailId;
-   }
-   //set nfo
-    public void setdetails(){
-        System.out.println("Enter  ");
-    }
-   //display minfo
-   public void displaysetdetails(){
-       System.out.println("Admin ID :"+AdminId);
-       System.out.println("Name :"+ name);
-       System.out.println("Department :"+ Dept);
+    private String department;
+    private String email;
 
-   }
-   
+    // Constructor
+    public admin(String name, String password, String department, String email) {
+        this.name = name;
+        this.password = password;
+        this.department = department;
+        this.email = email;
+    }
+
+    // Getter methods
+    public String getName() {
+        return name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    // Method to display user information
+    public void displayUserInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Password: " + password);
+        System.out.println("Department: " + department);
+        System.out.println("Email: " + email);
+    }
 }
+
+public void setDetails() {
+        // Collecting user information
+        Scanner scanner = new Scanner(System.in) {
+            // Collecting user information
+            System.out.print("Enter name: ");
+            this.name = scanner.nextLine();
+
+            System.out.print("Enter password: ");
+            String password = scanner.nextLine();
+
+            System.out.print("Enter department: ");
+            String department = scanner.nextLine();
+
+            System.out.print("Enter email: ");
+            String email = scanner.nextLine();
+
+
+
+
+            // Displaying user information
+
+
+    }
+}
+
