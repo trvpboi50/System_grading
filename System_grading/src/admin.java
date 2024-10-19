@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class admin {
-    private  String  name;
+    private   String  name;
     private String password;
     private String department;
     private String email;
@@ -39,21 +39,21 @@ public class admin {
     }
 }
 
-public void setDetails() {
+public void setDetails(Scanner input) {
         // Collecting user information
-        Scanner scanner = new Scanner(System.in) {
+        //Scanner scanner = new Scanner(System.in) {
             // Collecting user information
             System.out.print("Enter name: ");
-            this.name = scanner.nextLine();
+            this.name = input.next();
 
             System.out.print("Enter password: ");
-            String password = scanner.nextLine();
+            this.password = input.nextLine();
 
             System.out.print("Enter department: ");
-            String department = scanner.nextLine();
+            this.department = input.nextLine();
 
             System.out.print("Enter email: ");
-            String email = scanner.nextLine();
+            this.email = input.nextLine();
 
 
 
