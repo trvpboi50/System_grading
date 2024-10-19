@@ -3,7 +3,8 @@ public class Main {
        course Course=new course();
         student Student=new student();
         Student.displaySetdails();
-        Course.getCourse_title();
+        Course.dislayMethods();
+
 
 
     }

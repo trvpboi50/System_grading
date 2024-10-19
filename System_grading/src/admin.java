@@ -1,4 +1,4 @@
-/*public class admin {
+public class admin {
     private int AdminId;
     private int Phone;
     private String Dept;
@@ -6,10 +6,17 @@
     private String password;
     private String name;
 
-   public admin(){
-
-        System.out.print("ENTER ADMIN's NAME:" + name);
+    //constructors
+    public admin(){}
+   public admin(int AdminId,int Phone,String Dept,String emailId,String password,String name){
+       this.name=name;
+       this.AdminId=AdminId;
+       this.Dept=Dept;
+       this.emailId=emailId;
+       this.Phone=Phone;
+       this.password=password;
     }
+    //methods
     public void setAdminId(int id){
         AdminId = id;
     }
@@ -42,4 +49,4 @@
         return emailId;
     }
 
-}*/
+}
