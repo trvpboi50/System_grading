@@ -1,6 +1,10 @@
 public class admin {
-    private int AdminId, Phone;
-    private String Dept,emailId;
+    private int AdminId;
+    private int Phone;
+    private String Dept;
+    private String emailId;
+    private String password;
+    
     public admin(String name){
         System.out.print("ENTER ADMIN's NAME:" + name);
     }
@@ -13,6 +17,12 @@ public class admin {
    public void setPhone(int number){
     Phone = number;
 } 
+   public void setpassword(String security){
+       password = security;
+   }
+   public String getpassword(){
+       return password;
+   }
    public int getPhone(){
        return Phone;
    }
